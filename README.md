@@ -1,18 +1,20 @@
-# mcp-europepmc
+# @pipeworx/europepmc
 
-Europe PMC MCP — biomedical literature.
+Europe PubMed Central MCP — biomedical/life-science literature search + abstracts + full text (open-access only). Keyless.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
-| `search` | Europe PMC search (lucene-style query). Returns metadata for matching articles. |
-| `get_article` | Full record for one article by (source, id). Source: MED (Medline), PMC, PPR (preprints), CTX (clinicaltrials). |
-| `abstract` | Just the title + abstract for one article (faster than get_article). |
-| `references` | List of references cited by one article. |
-| `citations` | List of articles citing one article. |
+- `search(query, page?, pageSize?)` — Europe PMC search (lucene-style query)
+- `get_article(source, id)` — single-article record by source (`MED`, `PMC`, `PPR`, …) + id
+- `abstract(source, id)` — title + structured abstract
+- `references(source, id, pageSize?)` — list of cited references
+- `citations(source, id, pageSize?)` — list of citing articles
+
+## Data source
+
+`https://www.ebi.ac.uk/europepmc/webservices/rest/`
 
 ## Quick Start
 
@@ -28,7 +30,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -52,7 +54,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
