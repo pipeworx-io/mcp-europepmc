@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-europepmc",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Europe PMC MCP — biomedical literature.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-07af5cc611e1055aa0b7b01ff3edcd3261763ee0ce78ae3f61ac698530f82db9",
-    "sourceCommit": "712a5e0171ea24483214329d0cd7efdfd9b80352"
+    "sourceHash": "v1-50c0e34d9d99acc8fbb98372746f57944fc253a56da0c980bba77981d0b925fc",
+    "sourceCommit": "722087a9bda73f85942e8f6bbfd598544cb0d490"
   }
 }
