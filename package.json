@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-europepmc",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Europe PMC MCP — biomedical literature.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "europepmc",
     "gatewaySlug": "europepmc",
-    "sourceHash": "v1-9ad78b33339f3298f72f0726bb1ed63075559eb7d42163bff3e3eb26526320db",
-    "sourceCommit": "06a6b405041923c5ddf2ac2436e7c049e635f464"
+    "sourceHash": "v1-0f544e196e9f80255193b4c5d163444bd216cc045bb085b86ef5e46d3a047925",
+    "sourceCommit": "d35e32c1ffe988e24d391dedb35666387fd2b3d6"
   }
 }
